@@ -1,0 +1,56 @@
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	width: calc(400px - (45px + 87px));
+	margin-left: 45px;
+	margin-right: 87px;
+	margin-top: 45px;
+	margin-bottom: 45px;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 400;
+	color: #454545;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+}
+
+ul.sidebar-panel {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+ul.sidebar-panel li {
+	flex: 1;
+}
+
+ul.sidebar-panel li a {
+	flex: 1;
+	line-height: 24px;
+	color: #063257;
+}
+
+ul.sidebar-panel li a:hover {}
+
+ul.sidebar-panel li a i {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

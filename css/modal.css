@@ -1,0 +1,322 @@
+.service-img:hover #myBtn {
+    position: absolute;
+    left: calc(50% - 22px);
+    top: calc(50% - 22px);
+    border-radius: 100%;
+    background: rgba(150, 100, 255, .3);
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, .3);
+    outline: none;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, .3);
+    position: fixed;
+    /*bottom: 0;*/
+    left: 88px;
+    top: 20px;
+    /*background-color: #fefefe;*/
+    background: #F8F8F8;
+    width: calc(100% - 176px);
+    height: calc(100% - 44px);
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+    color: #656565;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 8px 16px;
+    /*background-color: #5cb85c;*/
+    color: #454545;
+}
+
+.hr {
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #fff;
+    background: none;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-body {
+    overflow-x: hidden;
+    overflow-y: scroll !important;
+    max-height: 524px;
+    /*min-height: 480px;*/
+    width: 100%;
+}
+
+.modal-body h2 {
+    font-size: 24px;
+    color: #454545;
+}
+
+.modal-body h2.subhead {
+    margin-top: 45px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modal-body h2.subhead2 {
+    margin-top: 25px;
+}
+
+.modal-body h2.question {
+    color: #007ee5;
+    margin-top: 25px;
+}
+
+.modal-body p {
+    font-size: 18px;
+    color: #656565;
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+.modal-body p span {
+    color: #00aafd;
+}
+
+.modal-body p span.user {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #454545;
+    font-weight: bold;
+}
+
+p.hr {
+    margin: 45px 0 20px 0;
+}
+
+.modal-footer {
+    padding: 8px 16px;
+    /*background-color: #5cb85c;*/
+    color: #454545;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+
+
+/* stores */
+.stores {
+    display: flex;
+    flex-direction: column;
+}
+
+.stores ul {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.stores ul li {
+    margin: 5px;
+    width: calc(25% - 10px);
+}
+
+.stores ul li a {
+    display: flex;
+    height: 167px;
+    background: white;
+    /*border: 3px solid #fefefe;*/
+    position: relative;
+}
+
+.stores ul li a img {}
+
+.stores ul li a .store-title {
+    width: 100%;
+    height: 50%;
+    background: rgba(0, 0, 0, .3);
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: black;
+}
+
+.stores ul li a .hover-bg {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.stores ul li a .store-preview {
+    background: #1C9F1C;
+    color: white;
+    border-radius: 100%;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    z-index: 2;
+    border: none;
+    outline: none;
+}
+
+.stores ul li a .store-preview i {
+    font-size: 20px;
+}
+
+.stores .previewed-store {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 45px;
+}
+
+.stores .store-descs {
+    display: flex;
+    flex-direction: row;
+}
+
+.stores .store-descs .img-store {
+    width: 200px;
+    background: white;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.stores .desc-store {
+    width: calc(100% - 200px);
+}
+
+.stores h6 {
+    font-size: 16px;
+    color: #555555;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.stores .desc-stores {}
+
+.stores ul.list-item li.user-comment {
+    line-height: inherit;
+}
+
+.read-more {
+    color: #5d930d;
+    text-decoration: underline;
+}
+
+.stores img {
+    margin: 10px 0 0 0;
+}
+
+
+
+
+
+
+
+
+ul.list-item {
+    display: flex;
+    flex-direction: column;
+}
+
+ul.list-item li {
+    width: 100%;
+    list-style-type: circle;
+    font-size: 18px;
+    font-family: 'Roboto';
+    color: #656565;
+    margin-left: 20px;
+}
+
+.stores ul.list-item li {
+    line-height: 10px;
+}
+
+ol.list-item {
+    display: flex;
+    flex-direction: column;
+}
+
+ol.list-item li {
+    width: 100%;
+    list-style-type: decimal;
+    font-size: 18px;
+    font-family: 'Roboto';
+    color: #656565;
+    margin-left: 30px;
+}
+
+ul.list-item li span,
+ol.list-item li span {
+    color: #00aafd;
+}
